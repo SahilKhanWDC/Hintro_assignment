@@ -1,0 +1,168 @@
+.list {
+  background: #ebecf0;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 280px;
+  max-width: 280px;
+  height: fit-content;
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+.new-list {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(0, 0, 0, 0.2);
+}
+
+.list-header {
+  margin-bottom: 12px;
+  cursor: grab;
+}
+
+.list-header:active {
+  cursor: grabbing;
+}
+
+.list-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  cursor: pointer;
+  flex: 1;
+}
+
+.list-title:hover {
+  color: #000;
+}
+
+.list-title-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #667eea;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.delete-list-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+}
+
+.delete-list-button:hover {
+  color: #c33;
+}
+
+.list-content {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 50px;
+}
+
+.task-form {
+  margin-top: 8px;
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.task-description-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.task-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.add-task-button,
+.cancel-task-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.add-task-button {
+  background: #667eea;
+  color: white;
+}
+
+.add-task-button:hover {
+  background: #5568d3;
+}
+
+.cancel-task-button {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.cancel-task-button:hover {
+  background: #d0d0d0;
+}
+
+.add-task-button-placeholder {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.add-task-button-placeholder:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.add-list-button {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.add-list-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

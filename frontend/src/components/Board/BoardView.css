@@ -1,0 +1,230 @@
+.board-view {
+  min-height: 100vh;
+  background-color: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 18px;
+  color: #666;
+}
+
+.board-header {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.board-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.board-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.live-users-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #4caf50;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.live-users-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.live-user-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.live-user-badge:hover {
+  transform: scale(1.1);
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.board-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.activity-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.activity-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.board-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.live-users-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #4caf50;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.live-users-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.live-user-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.live-user-badge:hover {
+  transform: scale(1.1);
+}
+
+.board-content {
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.lists-container {
+  display: flex;
+  gap: 20px;
+  min-width: fit-content;
+}
+
+.add-list-container {
+  min-width: 280px;
+}
+
+/* Invite UI styles (appended) */
+.invite-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.invite-input {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: none;
+  min-width: 180px;
+}
+
+.invite-button {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.invite-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
