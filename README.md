@@ -4,15 +4,15 @@ A production-ready full-stack task collaboration platform similar to Trello/Noti
 
 ## Features
 
-- ✅ **User Authentication**: JWT-based stateless authentication with bcrypt password hashing
-- ✅ **Board Management**: Create, view, and manage project boards
-- ✅ **List Management**: Create, update, and delete lists (columns) within boards
-- ✅ **Task Management**: Full CRUD operations for tasks with assignment capabilities
-- ✅ **Drag and Drop**: Intuitive drag-and-drop interface using @dnd-kit
-- ✅ **Real-Time Sync**: WebSocket-based real-time updates using Socket.IO
-- ✅ **Activity Tracking**: Complete activity history for all board actions
-- ✅ **Pagination & Search**: Efficient task search and pagination
-- ✅ **Access Control**: Board-level access control (only members can access)
+- **User Authentication**: JWT-based stateless authentication with bcrypt password hashing
+- **Board Management**: Create, view, and manage project boards
+- **List Management**: Create, update, and delete lists (columns) within boards
+- **Task Management**: Full CRUD operations for tasks with assignment capabilities
+- **Drag and Drop**: Intuitive drag-and-drop interface using @dnd-kit
+- **Real-Time Sync**: WebSocket-based real-time updates using Socket.IO
+- **Activity Tracking**: Complete activity history for all board actions
+- **Pagination & Search**: Efficient task search and pagination
+- **Access Control**: Board-level access control (only members can access)
 
 ## Tech Stack
 
